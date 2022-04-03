@@ -1,0 +1,3 @@
+[submodule "gperftools/src"]
+	path = gperftools/src
+	url = git@github.com:gperftools/gperftools.git
