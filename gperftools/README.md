@@ -1,8 +1,8 @@
-#### gperftools test
+# gperftools test
 
-##### contents
+## contents
 1. include
-headers of gperftools
+headers of gperftools and unwind
 
 2. libs
 libs of gperftools and unwind
@@ -11,19 +11,20 @@ libs of gperftools and unwind
 source code of gperftools in submodule
 
 4. tests
-tests of gperftools
+tests of gperftools components
 
-##### compile
+## compile
 ```
 mkdir build && cd build
 cmake ..
 make -j4
 ```
 
-##### test
+## test
 1. cpu profiler test
+2. heap profiler test
 
-##### lib version
+## lib version
 1. gperftools
 ssh: git@github.com:gperftools/gperftools.git
 branch: master
