@@ -1,23 +1,18 @@
 # gperftools test
 
 ## contents
-1. include
-headers of gperftools and unwind
+1. libs
+libs of and unwind
 
-2. libs
-libs of gperftools and unwind
+2. src
+source code of gperftools as a submodule
 
-3. src
-source code of gperftools in submodule
-
-4. tests
+3. tests
 tests of gperftools components
 
 ## compile
 ```
-mkdir build && cd build
-cmake ..
-make -j4
+sh build.sh
 ```
 
 ## test

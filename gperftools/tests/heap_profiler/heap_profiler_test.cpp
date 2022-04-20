@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string>
 
-#include "basictypes.h"
-#include "heap-profiler.h"
+#include "gperftools/heap-profiler.h"
 
 static const int kMaxCount = 100000;
 int* g_array[kMaxCount] = {nullptr};
 
-static ATTRIBUTE_NOINLINE void Allocate(int start, int end, int size) {
+static void Allocate(int start, int end, int size) {
   for (int i = start; i < end; ++i) {
     if (i < kMaxCount) g_array[i] = new int[size];
   }
