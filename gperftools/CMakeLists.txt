@@ -95,7 +95,7 @@ endif()
 
 find_package(Threads REQUIRED)
 
-include_directories(src/src)
-link_directories(src/build)
-link_directories(libs/unwind)
+include_directories(src/gperftools/src)
+link_directories(src/gperftools/.libs)
+link_directories(src/libunwind/src/.libs)
 add_subdirectory(tests)
